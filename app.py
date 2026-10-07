@@ -5,6 +5,17 @@ import os
 app = Flask(__name__)
 
 
+def split_members(text):
+    if not text:
+        return []
+
+    return [
+        name.strip()
+        for name in text.split("/")
+        if name.strip()
+    ]
+
+
 def load_shift(filename):
     file_path = os.path.join(
         app.root_path,
@@ -21,43 +32,25 @@ def load_shift(filename):
     ) as f:
 
         reader = csv.reader(f)
-
         rows = list(reader)
 
-        # 1行目：タイトル
-        # 2行目：見出し
-        # 3行目以降：シフト
-        for row in rows[2:]:
+        # 1行目は見出しなので飛ばす
+        for row in rows[1:]:
 
             if len(row) < 5:
                 continue
 
             shift = {
                 "time": row[0],
-
                 "cooking": split_members(row[1]),
-
                 "register": split_members(row[2]),
-
                 "service": split_members(row[3]),
-
                 "calling": split_members(row[4])
             }
 
             shifts.append(shift)
 
     return shifts
-
-
-def split_members(text):
-    if not text:
-        return []
-
-    return [
-        name.strip()
-        for name in text.split("/")
-        if name.strip()
-    ]
 
 
 @app.route("/")
@@ -74,11 +67,11 @@ def admin():
 def viewer():
 
     day1 = load_shift(
-        "ACEDOGS_10-10.csv"
+        "ACEDOGS_10-10_13人体制.csv"
     )
 
     day2 = load_shift(
-        "ACEDOGS_10-11.csv"
+        "ACEDOGS_10-11_13人体制.csv"
     )
 
     return render_template(

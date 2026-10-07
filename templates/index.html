@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ACEDOGS</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo-area">
+
+            <div class="logo-mark">
+                A
+            </div>
+
+            <div>
+                <h1>ACEDOGS</h1>
+                <p>Festival Shift Management</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    CULTURAL FESTIVAL 2026
+                </p>
+
+                <h2>
+                    文化祭のシフトを、<br>
+                    もっとわかりやすく。
+                </h2>
+
+                <p class="description">
+                    ACEDOGSは、文化祭2日間のシフトを
+                    かんたんに確認・管理できるシフト管理アプリです。
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODE SELECT -->
+        <section class="mode-section">
+
+            <div class="section-title">
+
+                <p>SELECT MODE</p>
+
+                <h3>
+                    利用するモードを選択
+                </h3>
+
+            </div>
+
+
+            <div class="mode-grid">
+
+                <!-- ADMIN -->
+                <a href="/admin"
+                   class="mode-card">
+
+                    <div class="card-top">
+
+                        <div class="icon">
+                            A
+                        </div>
+
+                        <span>
+                            ADMIN
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-content">
+
+                        <h4>
+                            管理者ログイン
+                        </h4>
+
+                        <p>
+                            シフトの登録・編集・確認を行います。
+                        </p>
+
+                    </div>
+
+
+                    <div class="card-bottom">
+
+                        <span>
+                            管理画面へ
+                        </span>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- VIEWER -->
+                <a href="/viewer"
+                   class="mode-card">
+
+                    <div class="card-top">
+
+                        <div class="icon viewer-icon">
+                            V
+                        </div>
+
+                        <span>
+                            VIEWER
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-content">
+
+                        <h4>
+                            閲覧者モード
+                        </h4>
+
+                        <p>
+                            文化祭2日間のシフトを確認できます。
+                        </p>
+
+                    </div>
+
+
+                    <div class="card-bottom">
+
+                        <span>
+                            シフトを見る
+                        </span>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        ACEDOGS FESTIVAL SHIFT SYSTEM
+    </footer>
+
+</div>
+
+</body>
+</html>

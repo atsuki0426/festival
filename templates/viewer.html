@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        ACEDOGS | シフト表
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- HEADER -->
+
+    <header class="viewer-header">
+
+        <a
+            href="/"
+            class="back-link"
+        >
+            ← TOP
+        </a>
+
+        <div>
+
+            <h1>
+                ACEDOGS
+            </h1>
+
+            <p>
+                Festival Shift Management
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- TITLE -->
+
+        <section class="viewer-title">
+
+            <p class="small-title-dark">
+                SHIFT SCHEDULE
+            </p>
+
+            <h2>
+                文化祭シフト
+            </h2>
+
+            <p>
+                日付を選択して、
+                担当時間とポジションを確認してください。
+            </p>
+
+        </section>
+
+
+
+        <!-- DAY TAB -->
+
+        <div class="day-tabs">
+
+            <button
+                class="day-tab active"
+                data-day="day1"
+            >
+
+                DAY 1
+
+                <span>
+                    10/10
+                </span>
+
+            </button>
+
+
+            <button
+                class="day-tab"
+                data-day="day2"
+            >
+
+                DAY 2
+
+                <span>
+                    10/11
+                </span>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ==========================
+             DAY 1
+        =========================== -->
+
+        <section
+            id="day1"
+            class="shift-day active"
+        >
+
+
+            <div class="day-heading">
+
+                <div>
+
+                    <p>
+                        DAY 01
+                    </p>
+
+                    <h3>
+                        10月10日
+                    </h3>
+
+                </div>
+
+
+                <span class="day-badge">
+
+                    9:00 - 17:00
+
+                </span>
+
+            </div>
+
+
+
+            <div class="shift-list">
+
+
+                {% for shift in day1 %}
+
+                <div class="shift-card">
+
+
+                    <!-- TIME -->
+
+                    <div class="shift-time">
+
+                        <span>
+                            {{ shift.time }}
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- SHIFT CONTENT -->
+
+                    <div class="shift-detail-grid">
+
+
+                        <!-- 調理 -->
+
+                        <div class="position-box">
+
+                            <div class="position-title cooking-title">
+
+                                調理
+
+                                <span>
+                                    {{ shift.cooking|length }}人
+                                </span>
+
+                            </div>
+
+                            <div class="member-list">
+
+                                {% for member in shift.cooking %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- レジ -->
+
+                        <div class="position-box">
+
+                            <div class="position-title register-title">
+
+                                レジ＋カウント
+
+                                <span>
+                                    {{ shift.register|length }}人
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-list">
+
+                                {% for member in shift.register %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 提供 -->
+
+                        <div class="position-box">
+
+                            <div class="position-title service-title">
+
+                                提供＋調味料補充
+
+                                <span>
+                                    {{ shift.service|length }}人
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-list">
+
+                                {% for member in shift.service %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 呼び込み -->
+
+                        <div class="position-box">
+
+                            <div class="position-title calling-title">
+
+                                呼び込み
+
+                                <span>
+                                    {{ shift.calling|length }}人
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-list">
+
+                                {% for member in shift.calling %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================
+             DAY 2
+        =========================== -->
+
+        <section
+            id="day2"
+            class="shift-day"
+        >
+
+
+            <div class="day-heading">
+
+                <div>
+
+                    <p>
+                        DAY 02
+                    </p>
+
+                    <h3>
+                        10月11日
+                    </h3>
+
+                </div>
+
+
+                <span class="day-badge">
+
+                    9:00 - 17:00
+
+                </span>
+
+            </div>
+
+
+
+            <div class="shift-list">
+
+
+                {% for shift in day2 %}
+
+                <div class="shift-card">
+
+
+                    <div class="shift-time">
+
+                        <span>
+                            {{ shift.time }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="shift-detail-grid">
+
+
+                        <!-- 調理 -->
+
+                        <div class="position-box">
+
+                            <div class="position-title cooking-title">
+
+                                調理
+
+                                <span>
+                                    {{ shift.cooking|length }}人
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-list">
+
+                                {% for member in shift.cooking %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- レジ -->
+
+                        <div class="position-box">
+
+                            <div class="position-title register-title">
+
+                                レジ＋カウント
+
+                                <span>
+                                    {{ shift.register|length }}人
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-list">
+
+                                {% for member in shift.register %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 提供 -->
+
+                        <div class="position-box">
+
+                            <div class="position-title service-title">
+
+                                提供＋調味料補充
+
+                                <span>
+                                    {{ shift.service|length }}人
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-list">
+
+                                {% for member in shift.service %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 呼び込み -->
+
+                        <div class="position-box">
+
+                            <div class="position-title calling-title">
+
+                                呼び込み
+
+                                <span>
+                                    {{ shift.calling|length }}人
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-list">
+
+                                {% for member in shift.calling %}
+
+                                <span class="member">
+
+                                    {{ member }}
+
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        ACEDOGS FESTIVAL SHIFT SYSTEM
+
+    </footer>
+
+
+</div>
+
+
+
+<script>
+
+const tabs =
+    document.querySelectorAll(
+        ".day-tab"
+    );
+
+
+const days =
+    document.querySelectorAll(
+        ".shift-day"
+    );
+
+
+tabs.forEach(tab => {
+
+    tab.addEventListener(
+        "click",
+        () => {
+
+            tabs.forEach(t => {
+
+                t.classList.remove(
+                    "active"
+                );
+
+            });
+
+
+            days.forEach(day => {
+
+                day.classList.remove(
+                    "active"
+                );
+
+            });
+
+
+            tab.classList.add(
+                "active"
+            );
+
+
+            const target =
+                tab.dataset.day;
+
+
+            document
+                .getElementById(target)
+                .classList.add("active");
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+
+</html>

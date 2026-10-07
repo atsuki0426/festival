@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ACEDOGS | 管理者</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="viewer-header">
+
+        <a href="/" class="back-link">
+            ← TOP
+        </a>
+
+        <div>
+            <h1>ACEDOGS</h1>
+            <p>Administrator</p>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="viewer-title">
+
+            <p class="small-title-dark">
+                SHIFT EDITOR
+            </p>
+
+            <h2>
+                シフト管理
+            </h2>
+
+            <p>
+                担当者を編集してシフトを管理できます。
+            </p>
+
+        </section>
+
+
+        <div class="day-tabs">
+
+            <button
+                class="day-tab active"
+                data-day="admin-day1"
+            >
+                DAY 1
+                <span>10/10</span>
+            </button>
+
+            <button
+                class="day-tab"
+                data-day="admin-day2"
+            >
+                DAY 2
+                <span>10/11</span>
+            </button>
+
+        </div>
+
+
+        <!-- DAY1 -->
+
+        <section
+            id="admin-day1"
+            class="shift-day active"
+        >
+
+            <div class="day-heading">
+
+                <div>
+                    <p>DAY 01</p>
+                    <h3>10月10日</h3>
+                </div>
+
+                <span class="day-badge">
+                    EDIT
+                </span>
+
+            </div>
+
+
+            <form
+                method="POST"
+                action="/admin/save/day1"
+            >
+
+                {% for shift in day1 %}
+
+                <div class="admin-shift-card">
+
+                    <div class="admin-time">
+
+                        {{ shift.time }}
+
+                        <input
+                            type="hidden"
+                            name="time_{{ loop.index0 }}"
+                            value="{{ shift.time }}"
+                        >
+
+                    </div>
+
+
+                    <div class="admin-fields">
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                調理（4人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="cooking_{{ loop.index0 }}"
+                                value="{{ shift.cooking | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                レジ＋カウント（2人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="register_{{ loop.index0 }}"
+                                value="{{ shift.register | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                提供＋調味料補充（3人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="service_{{ loop.index0 }}"
+                                value="{{ shift.service | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                呼び込み（4人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="calling_{{ loop.index0 }}"
+                                value="{{ shift.calling | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+
+                <button
+                    type="submit"
+                    class="save-button"
+                >
+                    10/10のシフトを保存
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- DAY2 -->
+
+        <section
+            id="admin-day2"
+            class="shift-day"
+        >
+
+            <div class="day-heading">
+
+                <div>
+                    <p>DAY 02</p>
+                    <h3>10月11日</h3>
+                </div>
+
+                <span class="day-badge">
+                    EDIT
+                </span>
+
+            </div>
+
+
+            <form
+                method="POST"
+                action="/admin/save/day2"
+            >
+
+                {% for shift in day2 %}
+
+                <div class="admin-shift-card">
+
+
+                    <div class="admin-time">
+
+                        {{ shift.time }}
+
+                        <input
+                            type="hidden"
+                            name="time_{{ loop.index0 }}"
+                            value="{{ shift.time }}"
+                        >
+
+                    </div>
+
+
+                    <div class="admin-fields">
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                調理（4人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="cooking_{{ loop.index0 }}"
+                                value="{{ shift.cooking | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                レジ＋カウント（2人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="register_{{ loop.index0 }}"
+                                value="{{ shift.register | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                提供＋調味料補充（3人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="service_{{ loop.index0 }}"
+                                value="{{ shift.service | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                        <div class="admin-field">
+
+                            <label>
+                                呼び込み（4人）
+                            </label>
+
+                            <input
+                                type="text"
+                                name="calling_{{ loop.index0 }}"
+                                value="{{ shift.calling | join(' / ') }}"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+
+                <button
+                    type="submit"
+                    class="save-button"
+                >
+                    10/11のシフトを保存
+                </button>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        ACEDOGS ADMIN SYSTEM
+    </footer>
+
+
+</div>
+
+
+
+<script>
+
+const tabs =
+    document.querySelectorAll(".day-tab");
+
+const days =
+    document.querySelectorAll(".shift-day");
+
+
+tabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        tabs.forEach(t =>
+            t.classList.remove("active")
+        );
+
+        days.forEach(day =>
+            day.classList.remove("active")
+        );
+
+        tab.classList.add("active");
+
+        document
+            .getElementById(tab.dataset.day)
+            .classList.add("active");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>

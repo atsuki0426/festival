@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ACEDOGS | 管理者ログイン</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <div class="login-card">
+
+        <p class="small-title-dark">
+            ADMIN
+        </p>
+
+        <h1>ACEDOGS</h1>
+
+        <h2>管理者ログイン</h2>
+
+        <p class="login-description">
+            管理者パスワードを入力してください。
+        </p>
+
+        {% if error %}
+
+        <div class="login-error">
+            {{ error }}
+        </div>
+
+        {% endif %}
+
+        <form method="POST">
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                autofocus
+            >
+
+            <button
+                type="submit"
+                class="save-button"
+            >
+                ログイン
+            </button>
+
+        </form>
+
+        <a
+            href="/"
+            class="login-back"
+        >
+            ← TOPへ戻る
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -10,7 +10,6 @@
 ================================== */
 
 body {
-
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -21,9 +20,7 @@ body {
         sans-serif;
 
     background: #fff8f1;
-
     color: #3c2a1e;
-
 }
 
 
@@ -32,11 +29,8 @@ body {
 ================================== */
 
 .container {
-
     width: min(1100px, 92%);
-
     margin: 0 auto;
-
 }
 
 
@@ -45,69 +39,51 @@ body {
 ================================== */
 
 .header {
-
     padding: 35px 0;
-
 }
 
 
 .logo-area {
-
     display: flex;
-
     align-items: center;
-
     gap: 14px;
-
 }
 
 
 .logo-mark {
-
     width: 50px;
     height: 50px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     background: #f97316;
-
     color: white;
 
     border-radius: 15px;
 
     font-size: 25px;
-
     font-weight: 800;
 
     box-shadow:
         0 8px 20px
         rgba(249, 115, 22, 0.25);
-
 }
 
 
 .logo-area h1 {
-
     font-size: 28px;
-
     letter-spacing: 2px;
-
     color: #ea580c;
-
 }
 
 
 .logo-area p {
-
     margin-top: 3px;
 
     font-size: 12px;
-
     color: #a66a42;
-
 }
 
 
@@ -116,9 +92,7 @@ body {
 ================================== */
 
 .hero {
-
     padding: 65px 60px;
-
     margin-bottom: 60px;
 
     background:
@@ -135,44 +109,34 @@ body {
     box-shadow:
         0 18px 45px
         rgba(249, 115, 22, 0.18);
-
 }
 
 
 .small-title {
-
     margin-bottom: 18px;
 
     font-size: 13px;
-
     letter-spacing: 2px;
 
     color: #ffedd5;
-
 }
 
 
 .hero h2 {
-
     margin-bottom: 20px;
 
     font-size: 46px;
-
     line-height: 1.35;
-
 }
 
 
 .description {
-
     max-width: 520px;
 
     font-size: 15px;
-
     line-height: 1.9;
 
     color: #fff7ed;
-
 }
 
 
@@ -181,38 +145,28 @@ body {
 ================================== */
 
 .mode-section {
-
     margin-bottom: 65px;
-
 }
 
 
 .section-title {
-
     margin-bottom: 25px;
-
 }
 
 
 .section-title p {
-
     margin-bottom: 7px;
 
     font-size: 12px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
 
     color: #f97316;
-
 }
 
 
 .section-title h3 {
-
     font-size: 28px;
-
 }
 
 
@@ -221,14 +175,12 @@ body {
 ================================== */
 
 .mode-grid {
-
     display: grid;
 
     grid-template-columns:
         repeat(2, 1fr);
 
     gap: 24px;
-
 }
 
 
@@ -237,21 +189,17 @@ body {
 ================================== */
 
 .mode-card {
-
     min-height: 270px;
 
     padding: 30px;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
 
     text-decoration: none;
 
     color: #3c2a1e;
-
     background: white;
 
     border:
@@ -263,12 +211,10 @@ body {
         transform 0.25s ease,
         box-shadow 0.25s ease,
         border-color 0.25s ease;
-
 }
 
 
 .mode-card:hover {
-
     transform:
         translateY(-7px);
 
@@ -278,7 +224,6 @@ body {
     box-shadow:
         0 18px 45px
         rgba(249, 115, 22, 0.16);
-
 }
 
 
@@ -287,31 +232,23 @@ body {
 ================================== */
 
 .card-top {
-
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
-
 }
 
 
 .card-top > span {
-
     font-size: 11px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
 
     color: #f97316;
-
 }
 
 
 .icon {
-
     width: 52px;
     height: 52px;
 
@@ -321,82 +258,63 @@ body {
     align-items: center;
 
     background: #f97316;
-
     color: white;
 
     border-radius: 15px;
 
     font-size: 20px;
-
     font-weight: 700;
-
 }
 
 
 .viewer-icon {
-
     background: #fff1e6;
-
     color: #f97316;
 
     border:
         1px solid #fed7aa;
-
 }
 
 
 .card-content h4 {
-
     margin-bottom: 10px;
 
     font-size: 24px;
-
 }
 
 
 .card-content p {
-
     font-size: 14px;
-
     line-height: 1.7;
 
     color: #8b6a55;
-
 }
 
 
 .card-bottom {
-
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
 
     font-size: 14px;
-
     font-weight: 600;
 
     color: #ea580c;
-
 }
 
 
 .arrow {
-
     font-size: 23px;
 
     transition:
         transform 0.2s ease;
-
 }
 
 
 .mode-card:hover .arrow {
-
     transform:
         translateX(6px);
-
 }
 
 
@@ -405,7 +323,6 @@ body {
 ================================== */
 
 .viewer-header {
-
     padding: 30px 0;
 
     display: flex;
@@ -413,23 +330,19 @@ body {
     align-items: center;
 
     gap: 25px;
-
 }
 
 
 .viewer-header h1 {
-
     font-size: 24px;
 
     letter-spacing: 2px;
 
     color: #ea580c;
-
 }
 
 
 .viewer-header p {
-
     margin-top: 2px;
 
     font-size: 11px;
@@ -437,12 +350,10 @@ body {
     letter-spacing: 1px;
 
     color: #b77950;
-
 }
 
 
 .back-link {
-
     padding: 11px 16px;
 
     text-decoration: none;
@@ -461,16 +372,12 @@ body {
     font-weight: 600;
 
     transition: 0.2s;
-
 }
 
 
 .back-link:hover {
-
     background: #f97316;
-
     color: white;
-
 }
 
 
@@ -479,14 +386,11 @@ body {
 ================================== */
 
 .viewer-title {
-
     padding: 40px 0 35px;
-
 }
 
 
 .small-title-dark {
-
     margin-bottom: 8px;
 
     font-size: 12px;
@@ -496,25 +400,20 @@ body {
     letter-spacing: 2px;
 
     color: #f97316;
-
 }
 
 
 .viewer-title h2 {
-
     margin-bottom: 12px;
 
     font-size: 42px;
-
 }
 
 
 .viewer-title > p:last-child {
-
     font-size: 14px;
 
     color: #8b6a55;
-
 }
 
 
@@ -523,7 +422,6 @@ body {
 ================================== */
 
 .day-tabs {
-
     padding: 5px;
 
     margin-bottom: 35px;
@@ -536,12 +434,10 @@ body {
     background: #ffedd5;
 
     border-radius: 18px;
-
 }
 
 
 .day-tab {
-
     padding: 17px 20px;
 
     border: none;
@@ -559,23 +455,19 @@ body {
     color: #c2410c;
 
     transition: 0.25s;
-
 }
 
 
 .day-tab span {
-
     margin-left: 6px;
 
     font-size: 12px;
 
     font-weight: 400;
-
 }
 
 
 .day-tab.active {
-
     background: #f97316;
 
     color: white;
@@ -583,7 +475,6 @@ body {
     box-shadow:
         0 5px 15px
         rgba(249, 115, 22, 0.22);
-
 }
 
 
@@ -592,23 +483,18 @@ body {
 ================================== */
 
 .shift-day {
-
     display: none;
 
     margin-bottom: 60px;
-
 }
 
 
 .shift-day.active {
-
     display: block;
-
 }
 
 
 .day-heading {
-
     display: flex;
 
     align-items: center;
@@ -616,12 +502,10 @@ body {
     justify-content: space-between;
 
     margin-bottom: 20px;
-
 }
 
 
 .day-heading p {
-
     margin-bottom: 5px;
 
     font-size: 11px;
@@ -629,19 +513,15 @@ body {
     letter-spacing: 2px;
 
     color: #fb923c;
-
 }
 
 
 .day-heading h3 {
-
     font-size: 26px;
-
 }
 
 
 .day-badge {
-
     padding: 8px 13px;
 
     background: #ffedd5;
@@ -655,7 +535,6 @@ body {
     font-weight: 700;
 
     letter-spacing: 1px;
-
 }
 
 
@@ -664,18 +543,15 @@ body {
 ================================== */
 
 .shift-list {
-
     display: flex;
 
     flex-direction: column;
 
     gap: 12px;
-
 }
 
 
 .shift-card {
-
     padding: 22px;
 
     display: grid;
@@ -698,12 +574,10 @@ body {
         transform 0.2s,
         box-shadow 0.2s,
         border-color 0.2s;
-
 }
 
 
 .shift-card:hover {
-
     transform:
         translateY(-3px);
 
@@ -713,7 +587,6 @@ body {
     box-shadow:
         0 10px 25px
         rgba(249, 115, 22, 0.10);
-
 }
 
 
@@ -722,7 +595,6 @@ body {
 ================================== */
 
 .shift-time {
-
     height: 100%;
 
     display: flex;
@@ -733,12 +605,10 @@ body {
 
     border-right:
         1px solid #fed7aa;
-
 }
 
 
 .shift-time span {
-
     font-size: 18px;
 
     font-weight: 700;
@@ -746,7 +616,6 @@ body {
     line-height: 1.4;
 
     color: #ea580c;
-
 }
 
 
@@ -755,19 +624,16 @@ body {
 ================================== */
 
 .shift-detail-grid {
-
     display: grid;
 
     grid-template-columns:
         repeat(2, 1fr);
 
     gap: 12px;
-
 }
 
 
 .position-box {
-
     padding: 14px;
 
     background: #fffaf5;
@@ -776,12 +642,10 @@ body {
         1px solid #fed7aa;
 
     border-radius: 14px;
-
 }
 
 
 .position-title {
-
     display: flex;
 
     align-items: center;
@@ -797,12 +661,10 @@ body {
     font-weight: 700;
 
     color: #ea580c;
-
 }
 
 
 .position-title span {
-
     padding: 3px 8px;
 
     background: white;
@@ -815,7 +677,6 @@ body {
     font-size: 10px;
 
     color: #f97316;
-
 }
 
 
@@ -824,18 +685,15 @@ body {
 ================================== */
 
 .member-list {
-
     display: flex;
 
     flex-wrap: wrap;
 
     gap: 7px;
-
 }
 
 
 .member {
-
     min-height: 30px;
 
     padding: 6px 10px;
@@ -856,7 +714,6 @@ body {
     font-size: 13px;
 
     font-weight: 600;
-
 }
 
 
@@ -865,7 +722,6 @@ body {
 ================================== */
 
 .admin-shift-card {
-
     background: white;
 
     border:
@@ -876,12 +732,10 @@ body {
     padding: 22px;
 
     margin-bottom: 15px;
-
 }
 
 
 .admin-time {
-
     font-size: 19px;
 
     font-weight: 800;
@@ -894,46 +748,38 @@ body {
 
     border-bottom:
         1px solid #fed7aa;
-
 }
 
 
 .admin-fields {
-
     display: grid;
 
     grid-template-columns:
         repeat(2, 1fr);
 
     gap: 15px;
-
 }
 
 
 .admin-field {
-
     display: flex;
 
     flex-direction: column;
 
     gap: 7px;
-
 }
 
 
 .admin-field label {
-
     font-size: 12px;
 
     font-weight: 700;
 
     color: #c2410c;
-
 }
 
 
 .admin-field input {
-
     width: 100%;
 
     padding: 13px 14px;
@@ -952,12 +798,10 @@ body {
     outline: none;
 
     transition: 0.2s;
-
 }
 
 
 .admin-field input:focus {
-
     border-color: #f97316;
 
     background: white;
@@ -965,12 +809,14 @@ body {
     box-shadow:
         0 0 0 3px
         rgba(249, 115, 22, 0.12);
-
 }
 
 
-.save-button {
+/* ==================================
+   SAVE BUTTON
+================================== */
 
+.save-button {
     width: 100%;
 
     border: none;
@@ -995,18 +841,232 @@ body {
         0 8px 20px
         rgba(249, 115, 22, 0.20);
 
-    transition: 0.2s;
-
+    transition:
+        background 0.2s,
+        transform 0.2s,
+        box-shadow 0.2s;
 }
 
 
 .save-button:hover {
-
     background: #ea580c;
 
     transform:
         translateY(-2px);
 
+    box-shadow:
+        0 12px 25px
+        rgba(249, 115, 22, 0.25);
+}
+
+
+.save-button:active {
+    transform:
+        translateY(0);
+}
+
+
+/* ==================================
+   ADMIN LOGIN
+================================== */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8f1,
+            #ffedd5
+        );
+}
+
+
+.login-card {
+    width: 100%;
+
+    max-width: 430px;
+
+    padding: 40px;
+
+    background: white;
+
+    border:
+        1px solid #fed7aa;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(249, 115, 22, 0.15);
+}
+
+
+.login-card h1 {
+    color: #ea580c;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+
+    font-size: 34px;
+}
+
+
+.login-card h2 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+.login-description {
+    color: #8b6a55;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+.login-card form {
+    width: 100%;
+}
+
+
+.login-card input {
+    width: 100%;
+
+    padding: 15px;
+
+    border:
+        1px solid #fed7aa;
+
+    border-radius: 12px;
+
+    background: #fffaf5;
+
+    color: #3c2a1e;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s,
+        background 0.2s;
+}
+
+
+.login-card input::placeholder {
+    color: #c4a38d;
+}
+
+
+.login-card input:focus {
+    border-color: #f97316;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(249, 115, 22, 0.12);
+}
+
+
+.login-error {
+    padding: 12px 14px;
+
+    margin-bottom: 18px;
+
+    background: #fff1f1;
+
+    border:
+        1px solid #fecaca;
+
+    border-radius: 10px;
+
+    color: #dc2626;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.login-back {
+    display: block;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #ea580c;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+.login-back:hover {
+    color: #f97316;
+}
+
+
+/* ==================================
+   LOGOUT
+================================== */
+
+.logout-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 15px;
+
+    margin-left: auto;
+
+    text-decoration: none;
+
+    color: #ea580c;
+
+    background: white;
+
+    border:
+        1px solid #fdba74;
+
+    border-radius: 12px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+
+.logout-button:hover {
+    background: #f97316;
+
+    color: white;
 }
 
 
@@ -1015,7 +1075,6 @@ body {
 ================================== */
 
 footer {
-
     padding: 35px 0 45px;
 
     border-top:
@@ -1026,7 +1085,6 @@ footer {
     font-size: 11px;
 
     letter-spacing: 1.5px;
-
 }
 
 
@@ -1036,13 +1094,30 @@ footer {
 
 @media (max-width: 700px) {
 
+    .container {
+        width: 92%;
+    }
+
+
     .header {
         padding: 25px 0;
     }
 
 
-    .hero {
+    .logo-mark {
+        width: 45px;
+        height: 45px;
 
+        border-radius: 13px;
+    }
+
+
+    .logo-area h1 {
+        font-size: 24px;
+    }
+
+
+    .hero {
         padding:
             45px 28px;
 
@@ -1051,67 +1126,95 @@ footer {
 
         border-radius:
             22px;
-
     }
 
 
     .hero h2 {
-
         font-size:
             32px;
-
     }
 
 
     .description {
-
         font-size:
             14px;
-
     }
 
 
     .mode-grid {
-
         grid-template-columns:
             1fr;
-
     }
 
 
     .mode-card {
-
         min-height:
             230px;
-
     }
 
 
     .section-title h3 {
-
         font-size:
             24px;
+    }
 
+
+    .viewer-header {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .viewer-header h1 {
+        font-size: 21px;
+    }
+
+
+    .viewer-title {
+        padding:
+            25px 0 28px;
     }
 
 
     .viewer-title h2 {
-
         font-size:
             32px;
+    }
 
+
+    .day-tabs {
+        margin-bottom:
+            25px;
+    }
+
+
+    .day-tab {
+        padding:
+            14px 8px;
+    }
+
+
+    .day-tab span {
+        display:
+            block;
+
+        margin-top:
+            2px;
+
+        margin-left:
+            0;
     }
 
 
     .shift-card {
-
         display: block;
 
+        padding: 18px;
     }
 
 
     .shift-time {
-
         padding-bottom:
             12px;
 
@@ -1123,69 +1226,75 @@ footer {
 
         border-bottom:
             1px solid #fed7aa;
-
     }
 
 
     .shift-time span {
-
         font-size:
             20px;
-
     }
 
 
     .shift-detail-grid {
-
         grid-template-columns:
             1fr;
-
-    }
-
-
-    .admin-fields {
-
-        grid-template-columns:
-            1fr;
-
     }
 
 
     .position-box {
-
         padding:
             12px;
-
     }
 
 
     .member {
-
         font-size:
             12px;
-
     }
 
 
-    .day-tab {
-
+    .admin-shift-card {
         padding:
-            14px 8px;
-
+            18px;
     }
 
 
-    .day-tab span {
+    .admin-fields {
+        grid-template-columns:
+            1fr;
+    }
 
-        display:
-            block;
 
-        margin-top:
-            2px;
+    .login-page {
+        padding:
+            20px;
+    }
 
+
+    .login-card {
+        padding:
+            30px 22px;
+
+        border-radius:
+            20px;
+    }
+
+
+    .login-card h1 {
+        font-size:
+            29px;
+    }
+
+
+    .login-card h2 {
+        font-size:
+            24px;
+    }
+
+
+    .logout-button {
         margin-left:
             0;
-
     }
 
 }

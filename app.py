@@ -71,7 +71,7 @@ def viewer():
     )
 
     day2 = load_shift(
-        "ACEDOGS_10-11_13人体制.csv"
+        "ACEDOGS_10-11_13人体制2.csv"
     )
 
     return render_template(
